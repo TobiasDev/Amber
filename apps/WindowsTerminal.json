@@ -1,0 +1,30 @@
+
+    "schemes": 
+    [
+        {
+            "background": "#1E1E2A",
+            "black": "#191924",
+            "blue": "#B8C7AF",
+            "brightBlack": "#7A7468",
+            "brightBlue": "#D0C9AD",
+            "brightCyan": "#B0A896",
+            "brightGreen": "#A7C0A2",
+            "brightPurple": "#E4B58F",
+            "brightRed": "#F5AD8F",
+            "brightWhite": "#E6E1D5",
+            "brightYellow": "#E2B86D",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#A7C0A2",
+            "foreground": "#E6E1D5",
+            "green": "#A0C5A9",
+            "name": "Amber",
+            "purple": "#D8C9B8",
+            "red": "#F5AD8F",
+            "selectionBackground": "#3E3A46",
+            "white": "#D6CFB7",
+            "yellow": "#E3B678"
+        }
+    ],
+    "themes": 
+    []
+}

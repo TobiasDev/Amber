@@ -1,0 +1,21 @@
+﻿{
+  "Name": "Amber",
+  "BackgroundColor": "30, 30, 42",
+  "LightBackgroundColor": "37, 37, 54",
+  "DarkBackgroundColor": "25, 25, 36",
+  "TextColor": "230, 225, 213",
+  "BorderColor": "45, 44, 63",
+  "CheckerColor": "37, 37, 54",
+  "CheckerColor2": "30, 30, 42",
+  "CheckerSize": 15,
+  "LinkColor": "217, 166, 108",
+  "MenuHighlightColor": "58, 58, 78",
+  "MenuHighlightBorderColor": "62, 58, 70",
+  "MenuBorderColor": "45, 44, 63",
+  "MenuCheckBackgroundColor": "42, 42, 62",
+  "MenuFont": "Inter, 9.75pt",
+  "ContextMenuFont": "Inter, 9.75pt",
+  "ContextMenuOpacity": 100,
+  "SeparatorLightColor": "45, 44, 63",
+  "SeparatorDarkColor": "25, 25, 36"
+}
