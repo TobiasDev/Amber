@@ -1,0 +1,28 @@
+[ColorEffects:Inactive]
+ChangeSelectionColor = true
+
+
+[Colors:Button]
+BackgroundNormal     = 30,30,42
+ForegroundNormal     = 230,225,213
+
+
+[Colors:Selection]
+BackgroundNormal     = 62,58,70
+ForegroundNormal     = 0
+
+
+[Colors:View]
+BackgroundAlternate  = 37,37,54
+BackgroundNormal     = 30,30,42
+ForegroundLink       = 112,106,81
+ForegroundNormal     = 230,225,213
+
+
+[Colors:Window]
+BackgroundNormal     = 30,30,42
+ForegroundNormal     = 230,225,213
+
+
+[General]
+Name                 = Amber
