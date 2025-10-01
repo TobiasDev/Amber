@@ -117,12 +117,24 @@ I use **IBM Plex** across the theme:
 
 ## Currently Themed Apps
 
-- **Neovim** – fully themed
-- **Slack** – manual tweaks
-- **OBS**, **ShareX**, **Flow Launcher** – see `/apps/`
-- **Godot**
-- **Vivaldi** – see `/apps/`
-- **Windows Terminal** – see `/apps/`
+- **Neovim** - fully themed
+- **Slack** - manual tweaks
+- **OBS** - see `/apps/`
+- **ShareX** - see `/apps/` 
+- **Flow Launcher** - see `/apps/`
+- **Vivaldi** - see `/apps/`
+- **Windows Terminal** - see `/apps/`
+- **Godot** - manual tweaks, see below
+
+---
+
+## Godot 4.x
+1. Open Editor -> Editor Settings
+2. Interface -> Theme
+3. Update to these settings: 
+Base Color: #1e1e2a
+Accent Color: #3a3a4e
+Contrast: 0.1
 
 ---
 
@@ -130,9 +142,9 @@ I use **IBM Plex** across the theme:
 
 - [x] Define base color palette
 - [x] Apply theme to core tools
-- [ ] Explore more theming support across my stack
-- [ ] Create wallpapers for the theme
-- [ ] Package and share publicly (maybe!)
+- [x] Explore more theming support across my stack
+- [x] Create wallpapers for the theme
+- [x] Package and share publicly
 
 ---
 
