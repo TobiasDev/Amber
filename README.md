@@ -131,10 +131,10 @@ I use **IBM Plex** across the theme:
 ## Godot 4.x
 1. Open Editor -> Editor Settings
 2. Interface -> Theme
-3. Update to these settings: 
-Base Color: #1e1e2a
-Accent Color: #3a3a4e
-Contrast: 0.1
+3. Update to these settings:   
+Base Color: #1E1E2A  
+Accent Color: #D9A66C  
+Contrast: 0.1  
 
 ---
 
