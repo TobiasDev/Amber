@@ -1,0 +1,354 @@
+/*
+AMBER Theme for Obsidian
+A soft and minimal theme for deep focus and clarity
+By TobiasDev
+*/
+
+.theme-dark {
+  /* Background Colors */
+  --background-primary: #1E1E2A;
+  --background-secondary: #252536;
+  --background-tertiary: #191924;
+  --background-modifier-border: #2D2C3F;
+  --background-modifier-form-field: #252536;
+  --background-modifier-form-field-highlighted: #2A2A3E;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-success: #A0C5A9;
+  --background-modifier-error: #F5836B;
+  --background-modifier-error-hover: #D94F45;
+  --background-modifier-cover: rgba(30, 30, 42, 0.8);
+  --background-secondary-alt: #1A1A25;
+  
+  /* Text Colors */
+  --text-normal: #E6E1D5;
+  --text-muted: #B0A896;
+  --text-faint: #7A7468;
+  --text-error: #F5836B;
+  --text-accent: #E2B86D;
+  --text-accent-hover: #D9A66C;
+  --text-on-accent: #1E1E2A;
+  --text-selection: rgba(62, 58, 70, 0.6);
+  
+  /* Interactive Elements */
+  --interactive-normal: #252536;
+  --interactive-hover: #2A2A3E;
+  --interactive-accent: #E2B86D;
+  --interactive-accent-hover: #D9A66C;
+  --interactive-success: #A0C5A9;
+  
+  /* Scrollbar */
+  --scrollbar-bg: #1E1E2A;
+  --scrollbar-thumb-bg: #7A7468;
+  --scrollbar-active-thumb-bg: #8B7A64;
+  
+  /* Title Bar */
+  --titlebar-background: #1E1E2A;
+  --titlebar-background-focused: #1E1E2A;
+  
+  /* Tab Colors */
+  --tab-background-active: #3A3A4E;
+  --tab-text-color-active: #E6E1D5;
+  --tab-text-color-focused-active: #FFFFFF;
+  --tab-text-color-focused-active-current: #FFFFFF;
+  
+  /* Status Bar */
+  --status-bar-background: #2D2C3F;
+  
+  /* Dividers */
+  --divider-color: #2D2C3F;
+  
+  /* Syntax Highlighting */
+  --code-normal: #E6E1D5;
+  --code-comment: #B0A896;
+  --code-function: #D9A66C;
+  --code-keyword: #E2B86D;
+  --code-string: #A7C0A2;
+  --code-tag: #E4965F;
+  --code-value: #E4B58F;
+  --code-property: #D0C9AD;
+  --code-operator: #C0B3A3;
+  
+  /* Additional Colors */
+  --color-red: #F5836B;
+  --color-orange: #E4965F;
+  --color-yellow: #E6AC4D;
+  --color-green: #A0C5A9;
+  --color-cyan: #B8C7AF;
+  --color-blue: #B8C7AF;
+  --color-purple: #D0C9AD;
+  --color-pink: #E4B58F;
+  
+  /* Link Colors */
+  --link-color: #E2B86D;
+  --link-color-hover: #D9A66C;
+  --link-external-color: #E4965F;
+  --link-unresolved-color: #B0A896;
+  
+  /* Selection & Highlights */
+  --text-highlight-bg: #706A51;
+  --text-highlight-bg-active: rgba(226, 184, 109, 0.3);
+  
+  /* Cursor */
+  --cursor-color: #FFFFFF;
+  
+  /* Font Family */
+  --font-interface: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-text: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-monospace: 'IBM Plex Mono', 'Courier New', monospace;
+}
+
+.theme-light {
+  /* Light theme support - keeping Amber's dark aesthetic but with lighter backgrounds */
+  --background-primary: #F5F2ED;
+  --background-secondary: #EAE5DD;
+  --background-tertiary: #E0DAD0;
+  --text-normal: #2A2834;
+  --text-muted: #5A5648;
+  --text-faint: #8A8678;
+  --text-accent: #D9A66C;
+  --interactive-accent: #D9A66C;
+  --link-color: #D9A66C;
+}
+
+/* Enhanced Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-bg);
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-active-thumb-bg);
+}
+
+/* Sharp Corners - Remove roundness throughout */
+.modal,
+.menu,
+.suggestion-container,
+.dropdown,
+.prompt,
+.notice,
+button,
+input,
+textarea,
+.search-input,
+.tag,
+.checkbox-container,
+.tree-item-self {
+  border-radius: 0 !important;
+}
+
+/* Editor Enhancements */
+.markdown-source-view.mod-cm6 .cm-scroller {
+  font-family: var(--font-text);
+}
+
+.markdown-source-view.mod-cm6 .cm-line {
+  padding-left: 8px;
+}
+
+/* Code Blocks */
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock,
+pre code {
+  font-family: var(--font-monospace);
+  background-color: var(--background-tertiary);
+  border-radius: 0;
+}
+
+/* Headers */
+.cm-header-1,
+.markdown-preview-view h1 {
+  color: var(--code-keyword);
+  font-weight: 600;
+}
+
+.cm-header-2,
+.markdown-preview-view h2 {
+  color: var(--code-function);
+  font-weight: 600;
+}
+
+.cm-header-3,
+.markdown-preview-view h3 {
+  color: var(--code-property);
+  font-weight: 600;
+}
+
+.cm-header-4,
+.markdown-preview-view h4,
+.cm-header-5,
+.markdown-preview-view h5,
+.cm-header-6,
+.markdown-preview-view h6 {
+  color: var(--text-accent);
+  font-weight: 600;
+}
+
+/* Links */
+.cm-link,
+.cm-hmd-internal-link,
+.markdown-preview-view a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.cm-link:hover,
+.cm-hmd-internal-link:hover,
+.markdown-preview-view a:hover {
+  color: var(--link-color-hover);
+  text-decoration: underline;
+}
+
+/* Bold and Italic */
+.cm-strong,
+.markdown-preview-view strong {
+  color: var(--code-value);
+  font-weight: 600;
+}
+
+.cm-em,
+.markdown-preview-view em {
+  color: var(--code-string);
+  font-style: italic;
+}
+
+/* Lists */
+.cm-formatting-list,
+.markdown-preview-view ul,
+.markdown-preview-view ol {
+  color: var(--text-accent);
+}
+
+/* Blockquotes */
+.cm-quote,
+.markdown-preview-view blockquote {
+  color: var(--text-muted);
+  border-left: 3px solid var(--text-accent);
+  padding-left: 12px;
+}
+
+/* Tags */
+.cm-tag,
+.tag {
+  color: var(--code-tag);
+  background-color: var(--background-tertiary);
+  padding: 2px 6px;
+  border-radius: 0;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--text-selection);
+}
+
+/* Active Line */
+.cm-active.cm-line {
+  background-color: rgba(58, 58, 78, 0.3);
+}
+
+/* Search Results */
+.search-result-file-match {
+  background-color: var(--text-highlight-bg);
+}
+
+.search-result-file-match:hover {
+  background-color: var(--text-highlight-bg-active);
+}
+
+/* File Explorer */
+.nav-file-title,
+.nav-folder-title {
+  border-radius: 0;
+}
+
+.nav-file-title.is-active {
+  background-color: var(--tab-background-active);
+  color: var(--tab-text-color-active);
+}
+
+/* Graph View */
+.graph-view.color-fill-tag {
+  color: var(--code-tag);
+}
+
+.graph-view.color-fill-attachment {
+  color: var(--code-value);
+}
+
+.graph-view.color-fill-unresolved {
+  color: var(--link-unresolved-color);
+}
+
+/* Callouts */
+.callout {
+  border-radius: 0;
+  border-left-width: 4px;
+}
+
+.callout[data-callout="info"] {
+  border-left-color: var(--color-blue);
+}
+
+.callout[data-callout="warning"] {
+  border-left-color: var(--color-yellow);
+}
+
+.callout[data-callout="error"],
+.callout[data-callout="danger"] {
+  border-left-color: var(--color-red);
+}
+
+.callout[data-callout="success"] {
+  border-left-color: var(--color-green);
+}
+
+/* Tables */
+.markdown-preview-view table {
+  border-collapse: collapse;
+}
+
+.markdown-preview-view th {
+  background-color: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  padding: 8px;
+  font-weight: 600;
+}
+
+.markdown-preview-view td {
+  border: 1px solid var(--background-modifier-border);
+  padding: 8px;
+}
+
+/* Checkboxes */
+.task-list-item-checkbox {
+  border-radius: 0;
+  border: 2px solid var(--text-muted);
+}
+
+.task-list-item-checkbox:checked {
+  background-color: var(--interactive-success);
+  border-color: var(--interactive-success);
+}
+
+/* Focus Mode Enhancement */
+.markdown-source-view.is-readable-line-width .cm-content,
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
+  max-width: 800px;
+  padding: 40px 80px;
+}
+
+/* Minimal Distraction */
+.workspace-leaf-content[data-type='empty'] .view-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-faint);
+}

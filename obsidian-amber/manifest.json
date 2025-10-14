@@ -1,0 +1,8 @@
+{
+  "name": "Amber",
+  "version": "0.5.0",
+  "minAppVersion": "0.16.0",
+  "author": "TobiasDev",
+  "authorUrl": "https://github.com/TobiasDev/Amber",
+  "modes": ["dark", "light"]
+}
